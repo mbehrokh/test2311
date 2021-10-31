@@ -12,12 +12,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val edt_name =findViewById<EditText>(R.id.ac_main_edt_name)
+        val edt_name2 =findViewById<EditText>(R.id.ac_main_edt_family)
         val btn_ok = findViewById<Button>(R.id.ac_main_btn_ok)
         btn_ok.setOnClickListener {
             Toast.makeText(this,edt_name.text,Toast.LENGTH_LONG).show()
             var intent:Intent= Intent(this,MainActivity2::class.java)
                 intent.putExtra("name",edt_name.text)
-                intent.putExtra("family",edt_name.text)
+                intent.putExtra("family",edt_name2.text)
 
             startActivity(intent)
         }

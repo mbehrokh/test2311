@@ -46,4 +46,16 @@
         app:layout_constraintTop_toBottomOf="@+id/ac_main_edt_name"
         app:layout_constraintVertical_bias="0.27" />
 
+    <EditText
+        android:id="@+id/ac_main_edt_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/ac_main_btn_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ac_main_edt_name" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
